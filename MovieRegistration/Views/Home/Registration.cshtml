@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model Movie
+
+    <form asp-controller="Home" asp-action="Register">
+
+        <p>
+            <label asp-for="ID"></label>
+            <input asp-for="ID" />
+        </p>
+        <p>
+            <label asp-for="Title"></label>
+            <input asp-for="Title" />
+        </p>
+        <p>
+            <label asp-for="Year"></label>
+            <input asp-for="Year" min="1880" max="2020" />
+        </p>
+        <p>
+            <label for="Genre ()">Genre</label>
+
+            <select name="genre" id="genre" required multiple>
+                <option value="Drama">Drama</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Horror">Horror</option>
+                <option value="Family">Family</option>
+                <option value="Action">Action</option>
+                <option value="Romance">Romance</option>
+                <option value="Animation">Animation</option>
+                <option value="Musical">Musical</option>
+            </select>
+        </p>
+        <p>Hold CTRL to select multiple options.</p>
+        <p>
+            <label asp-for="Actors"></label>
+            <input asp-for="Actors" />
+        </p>
+        <p>
+            <label asp-for="Directors"></label>
+            <input asp-for="Directors" />
+        </p>
+        <p><button>Submit</button></p>
+    </form>
+
+
+

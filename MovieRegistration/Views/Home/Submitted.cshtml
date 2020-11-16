@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Submitted";
+}
+@model Movie
+
+<h1>Thank you!</h1>
+<h2>@Model.Title has been added!</h2>
+<h6>@Model.ID</h6>
+<h6>Made in: @Model.Year</h6>
+<h6>Genres</h6>
+<ul>
+@foreach(string item in Model.Genre)
+{
+    <li>@item</li>
+}
+</ul>
+<h6>Starring: @Model.Actors</h6>
+<h6>Directed by: @Model.Directors</h6>
+
+
