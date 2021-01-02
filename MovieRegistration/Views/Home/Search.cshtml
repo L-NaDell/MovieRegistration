@@ -7,9 +7,9 @@
 
 <h1 style="color: crimson; font-size:90px;">Coming Soon!!</h1>
 
-@*      Set up logic
-    
-    <form asp-controller="Home" asp-action="Search">
+@*Set up logic*@
+
+<form asp-controller="Home" asp-action="Search">
     <p>
     <p>
         <label for="Search">Search by</label>
@@ -23,6 +23,10 @@
             <option value="ID">ID</option>
         </select>
     </p>
-    <input type="text" name="input"/>
+    <input type="text" name="input" />
 
-</form>*@
+    @*make a button, kinda*@
+    <a asp-action="Search" asp-controller="Home">
+        <button>Button words</button>
+    </a>
+</form>
